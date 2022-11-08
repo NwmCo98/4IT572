@@ -48,7 +48,7 @@ jobs:
         with:
           path: node_modules
           key: node_modules-${{ hashFiles('**package-lock.json') }}
-            restore-keys: node_modules-
+          restore-keys: node_modules-
 
       - name: Build
         run: |
